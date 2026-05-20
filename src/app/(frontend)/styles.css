@@ -1,5 +1,9 @@
-@import "tailwindcss";
-@plugin "daisyui";
+@import 'tailwindcss';
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark;
+}
 
 :root {
   --font-mono: 'Roboto Mono', monospace;
@@ -12,8 +16,6 @@
 html {
   font-size: 18px;
   line-height: 32px;
-
-  background: rgb(0, 0, 0);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -29,7 +31,6 @@ body {
   line-height: 32px;
 
   margin: 0;
-  color: rgb(1000, 1000, 1000);
 
   @media (max-width: 1024px) {
     font-size: 15px;
@@ -75,8 +76,6 @@ p {
 }
 
 a {
-  color: currentColor;
-
   &:focus {
     opacity: 0.8;
     outline: none;
@@ -98,68 +97,37 @@ svg {
   justify-content: space-between;
   align-items: center;
   height: 100vh;
-  max-width: 1024px;
-  margin: 0 auto;
+  margin: 0;
   overflow: hidden;
 
-  @media (max-width: 400px) {
-    padding: 24px;
-  }
-
-  .content {
+  .content-wrapper {
     display: flex;
     flex-direction: column;
- 
     flex-grow: 1;
+    width: 100%;
+    overflow: hidden;
 
     h1 {
       text-align: center;
     }
-  }
 
-  .links {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    a {
-      text-decoration: none;
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-    }
-
-    .admin {
-      color: rgb(0, 0, 0);
-      background: rgb(1000, 1000, 1000);
-      border: 1px solid rgb(0, 0, 0);
-    }
-
-    .docs {
-      color: rgb(1000, 1000, 1000);
-      background: rgb(0, 0, 0);
-      border: 1px solid rgb(1000, 1000, 1000);
+    .content {
+      width: 100%;
+      overflow: auto;
     }
   }
+}
 
-  .footer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+/* Home Page */
+.home-page {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
 
-    @media (max-width: 1024px) {
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .codeLink {
-      text-decoration: none;
-      padding: 0 0.5rem;
-      background: rgb(60, 60, 60);
-      border-radius: 4px;
-    }
-  }
+/* Footer Page */
+.footer-page {
+  display: flex;
+  width: 100%;
+  height: 50vh;
 }
