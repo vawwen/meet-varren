@@ -1,5 +1,5 @@
 import '../styles.css'
 
-export default async function Footer() {
+export default function Footer() {
   return <div className="footer-page"></div>
 }
