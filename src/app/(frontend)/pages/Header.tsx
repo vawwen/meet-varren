@@ -1,13 +1,10 @@
 'use client'
 
 import ThemeChanger from '@/components/ThemeChanger'
-import { useTheme } from '@/app/(frontend)/context/ThemeContext'
 import RotatingSubtitle from '@/components/RotatingSubtitle'
 import LiveTime from '@/components/LiveTime'
 
 export default function Header() {
-  const { isDark } = useTheme()
-
   return (
     <div className="header-page">
       <div className="header-start">
