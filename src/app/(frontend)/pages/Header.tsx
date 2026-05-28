@@ -6,8 +6,8 @@ import LiveTime from '@/components/LiveTime'
 
 export default function Header() {
   return (
-    <div className="header-page">
-      <div className="header-start">
+    <nav className="mx-auto w-full max-w-[1640px] px-6 md:px-12 lg:px-20 py-6 md:py-10 flex items-center justify-between gap-4">
+      <div className="flex items-center gap-4">
         <div className="avatar" style={{ height: 'fit-content' }}>
           <div className="w-8 rounded-full">
             <img
@@ -27,7 +27,7 @@ export default function Header() {
           <RotatingSubtitle />
         </div>
       </div>
-      <div className="header-end flex items-center gap-4">
+      <div className="flex items-center gap-4 h-auto">
         {/* Time Zones Container */}
         <div className="flex flex-col sm:flex-row items-end sm:items-center gap-1 sm:gap-4 border-r border-base-content/10 pr-4">
           <LiveTime zone="HKT" />
@@ -35,6 +35,6 @@ export default function Header() {
         </div>
         <ThemeChanger />
       </div>
-    </div>
+    </nav>
   )
 }

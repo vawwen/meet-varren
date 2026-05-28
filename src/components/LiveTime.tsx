@@ -50,11 +50,11 @@ export default function LiveTime({ zone }: LiveTimeProps) {
   }, [zone])
 
   if (time === null) {
-    return <span className="text-[14px] text-base-content/50 font-mono">--- --:-- ---</span>
+    return <span className="text-[12px] text-base-content/50 font-mono">--- --:-- ---</span>
   }
 
   return (
-    <span className="font-medium text-base-content/80 font-mono text-[14px]">
+    <span className="font-medium text-base-content/80 font-mono text-[12px]">
       {`${time} ${zone}`}
     </span>
   )
