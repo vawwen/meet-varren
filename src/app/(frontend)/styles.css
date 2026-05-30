@@ -37,10 +37,6 @@ body {
     width: 100%;
     overflow: hidden;
 
-    h1 {
-      text-align: center;
-    }
-
     .content {
       width: 100%;
       overflow: auto;
