@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export default function RotatingSubtitle() {
-  const phrases = ['Full-Stack Developer', 'Stardew Farmer', 'LeBron Glazer']
+  const phrases = ['Full-Stack Developer', 'Stardew Farmer', 'LeBron Glazer', 'ETF Enthusiast']
   const [index, setIndex] = useState(0)
   const [fade, setFade] = useState(true)
 
