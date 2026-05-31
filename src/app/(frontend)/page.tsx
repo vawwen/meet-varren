@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Footer from './pages/Footer'
 import { ThemeProvider } from './context/ThemeContext'
 import Investment from './pages/Investment'
+import Hobby from './pages/Hobby'
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
             <Header />
             <Home />
             <Investment />
+            <Hobby />
             <Footer />
           </ThemeProvider>
         </div>
