@@ -31,16 +31,16 @@ export default function ExperienceCard({
             <h3 className="text-xl xl:text-2xl font-semibold text-base-content tracking-tight transition-colors duration-200 leading-snug text-left">
               {companyName}
             </h3>
-            <span className="text-lg xl:text-xl font-semibold opacity-60 sm:text-right">
+            <span className="text-base md:text-lg xl:text-xl text-base-content/80 font-semibold opacity-60 sm:text-right">
               {timeline}
             </span>
           </div>
 
-          <div className="text-lg xl:text-xl text-base-content/80">{position}</div>
+          <div className="text-base md:text-lg xl:text-xl text-base-content/80">{position}</div>
 
           <div className="w-full h-[1px] bg-base-content/5 my-2" />
 
-          <div className="text-lg xl:text-xl md:text-base text-base-content/80 leading-relaxed pt-1">
+          <div className="text-base md:text-lg xl:text-xl text-base-content/80 leading-relaxed pt-1">
             {description}
           </div>
         </div>

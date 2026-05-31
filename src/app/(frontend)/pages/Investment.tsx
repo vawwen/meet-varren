@@ -1,6 +1,7 @@
 import ScrollReveal from '@/components/ScrollReveal'
 import '../styles.css'
 import InvestmentChart from '@/components/InvestmentChart'
+import InvestmentBarChart from '@/components/InvestmentBarChart'
 
 export default function Investment() {
   return (
@@ -17,7 +18,7 @@ export default function Investment() {
               {/* Mobile Photo Container (Visible on mobile, hidden on desktop layout) */}
               <div className="w-full xl:hidden my-4">
                 <div className="w-full h-full object-cover">
-                  <InvestmentChart />
+                  <InvestmentBarChart />
                 </div>
               </div>
 
