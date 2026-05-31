@@ -6,6 +6,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import Investment from './pages/Investment'
 import Hobby from './pages/Hobby'
 import Skills from './pages/Skills'
+import Experience from './pages/Experience'
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
             <Header />
             <Home />
             <Skills />
+            <Experience />
             <Investment />
             <Hobby />
             <Footer />

@@ -25,10 +25,10 @@ export default function Skills() {
             {/* Description Bio Paragraphs */}
             <div className="text-base md:text-lg xl:text-xl text-base-content/80 md:max-w-[760px] space-y-5 md:space-y-6 mt-2 text-left">
               <p>
-                My role as a Full-Stack Developer at Deloitte combines the discipline of enterprise
-                software engineering with the agility of modern web development. I focus heavily on
-                creating seamless user experiences backed by resilient APIs, specifically tailored
-                for intricate corporate KYC processes.
+                My current role as a Full-Stack Developer at Deloitte combines the discipline of
+                enterprise software engineering with the agility of modern web development. I focus
+                heavily on creating seamless user experiences backed by resilient APIs, specifically
+                tailored for intricate corporate KYC processes.
               </p>
               <p>
                 I also explore the intersection of data and AI, utilizing Python and LangChain
