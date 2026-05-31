@@ -1,16 +1,6 @@
 'use client'
 
-import React from 'react'
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-  Cell,
-} from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts'
 
 // #region Data
 const data = [
@@ -55,7 +45,7 @@ const CustomTooltip = ({ active, payload }: any) => {
         <p className="text-xs uppercase font-bold tracking-wider text-base-content/50">
           Asset Allocation
         </p>
-        <p className="text-base font-extrabold text-base-content mt-0.5">
+        <p className="text-base font-bold text-base-content mt-0.5">
           {payload[0].payload.name}: <span className="text-primary">{payload[0].value}%</span>
         </p>
       </div>
@@ -82,13 +72,6 @@ export default function InvestmentBarChart({
             bottom: 10,
           }}
         >
-          {/* Subtle grid lines matching theme borders */}
-          <CartesianGrid
-            stroke="oklch(var(--bc) / 0.05)"
-            horizontal={false}
-            strokeDasharray="3 3"
-          />
-
           {/* X Axis showing percentages */}
           <XAxis
             type="number"
@@ -110,7 +93,7 @@ export default function InvestmentBarChart({
             width={60}
           />
 
-          <Tooltip content={<CustomTooltip />} cursor={{ fill: 'oklch(var(--bc) / 0.03)' }} />
+          <Tooltip content={<CustomTooltip />} cursor={{ fill: '#d9dde4' }} />
 
           {/* The Data Bars */}
           <Bar
