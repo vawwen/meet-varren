@@ -93,7 +93,7 @@ export default function InvestmentBarChart({
           <XAxis
             type="number"
             tickFormatter={(val) => `${val}%`}
-            stroke="oklch(var(--bc) / 0.4)"
+            stroke="#9ca3af"
             fontSize={12}
             tickLine={false}
           />
@@ -102,7 +102,7 @@ export default function InvestmentBarChart({
           <YAxis
             dataKey="name"
             type="category"
-            stroke="oklch(var(--bc) / 0.6)"
+            stroke="#9ca3af"
             fontSize={13}
             fontWeight={600}
             tickLine={false}
