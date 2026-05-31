@@ -1,5 +1,6 @@
 import ExperienceCard from '@/components/ExperienceCard'
 import '../styles.css'
+import ScrollReveal from '@/components/ScrollReveal'
 
 const experienceData = [
   {
@@ -84,42 +85,44 @@ const experienceData = [
 
 export default function Experience() {
   return (
-    <section className="relative w-full">
-      <div className="mx-auto max-w-[1640px] px-6 md:px-12 lg:px-20 py-12 xl:py-[120px]">
-        <div className="flex flex-col xl:flex-row gap-12 xl:gap-[80px] items-center">
-          <div className="flex flex-col gap-4 items-start min-w-0 w-full xl:flex-[760_1_0]">
-            <h1 className="text-2xl xl:text-3xl font-semibold text-base-content leading-snug text-left">
-              My Journey: From Classrooms to Codebases
-            </h1>
+    <ScrollReveal>
+      <section className="relative w-full">
+        <div className="mx-auto max-w-[1640px] px-6 md:px-12 lg:px-20 py-12 xl:py-[120px]">
+          <div className="flex flex-col xl:flex-row gap-12 xl:gap-[80px] items-center">
+            <div className="flex flex-col gap-4 items-start min-w-0 w-full xl:flex-[760_1_0]">
+              <h1 className="text-2xl xl:text-3xl font-semibold text-base-content leading-snug text-left">
+                My Journey: From Classrooms to Codebases
+              </h1>
 
-            <div className="text-base md:text-lg xl:text-xl text-base-content/80 space-y-5 md:space-y-6 mt-2 text-left">
-              <p>
-                After cutting my teeth as a software engineering intern across different teams, I
-                joined Deloitte as an Analyst. My role centers around full-stack web development,
-                where I spend most of my time optimizing the frontend to deliver polished,
-                high-performance user experiences.
-              </p>
-              <p>
-                Take a look at the cards below to see my timeline, my core responsibilities, and the
-                stack I used at each step of my journey.
-              </p>
-            </div>
+              <div className="text-base md:text-lg xl:text-xl text-base-content/80 space-y-5 md:space-y-6 mt-2 text-left">
+                <p>
+                  After cutting my teeth as a software engineering intern across different teams, I
+                  joined Deloitte as an Analyst. My role centers around full-stack web development,
+                  where I spend most of my time optimizing the frontend to deliver polished,
+                  high-performance user experiences.
+                </p>
+                <p>
+                  Take a look at the cards below to see my timeline, my core responsibilities, and
+                  the stack I used at each step of my journey.
+                </p>
+              </div>
 
-            <div className="w-full flex flex-col gap-6 mt-6">
-              {experienceData.map((exp, index) => (
-                <ExperienceCard
-                  key={index}
-                  companyName={exp.companyName}
-                  position={exp.position}
-                  timeline={exp.timeline}
-                  description={exp.description}
-                  logoSrc={exp.logoSrc}
-                />
-              ))}
+              <div className="w-full flex flex-col gap-6 mt-6">
+                {experienceData.map((exp, index) => (
+                  <ExperienceCard
+                    key={index}
+                    companyName={exp.companyName}
+                    position={exp.position}
+                    timeline={exp.timeline}
+                    description={exp.description}
+                    logoSrc={exp.logoSrc}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </ScrollReveal>
   )
 }
