@@ -3,6 +3,7 @@ import Header from '@/app/(frontend)/pages/Header'
 import Home from './pages/Home'
 import Footer from './pages/Footer'
 import { ThemeProvider } from './context/ThemeContext'
+import Investment from './pages/Investment'
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
           <ThemeProvider>
             <Header />
             <Home />
+            <Investment />
             <Footer />
           </ThemeProvider>
         </div>

@@ -13,7 +13,7 @@ export default function Home() {
               AI systems
             </h1>
 
-            {/* Mobile Video Container (Visible on mobile, hidden on desktop layout) */}
+            {/* Mobile Photo Container (Visible on mobile, hidden on desktop layout) */}
             <div className="w-full xl:hidden my-4">
               <div className="relative w-full aspect-video max-w-[640px] overflow-hidden rounded-3xl shadow-lg">
                 <img
@@ -47,11 +47,11 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Action Controls / Social Media Link Pill Array */}
+            {/* Action Controls Pill Array */}
             <ContactButtonGroup />
           </div>
 
-          {/* Right Column: Desktop Layout Video Showcase Asset */}
+          {/* Right Column: Photo */}
           <div className="hidden xl:block w-full xl:flex-[640_1_0] xl:max-w-[640px]">
             <div className="relative w-full aspect-video max-w-[640px] overflow-hidden rounded-3xl shadow-xl">
               <img
